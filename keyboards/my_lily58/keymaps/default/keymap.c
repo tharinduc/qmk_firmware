@@ -59,8 +59,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |   `  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |RCtrl |
    * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
    * | LAlt | Home | End  |  Ins |  Del | Caps |-------.    ,-------| PgUp | Left | Down |  Up  |Right | PgDn |
-   * |------+------+------+------+------+------|   [   |    |    ]  |------+------+------+------+------+------|
-   * | Mute |  Sp- |  Sp+ | Bri- | Bri+ |      |-------|    |-------|   +  |   -  |   =  |   [  |   ]  |   \  |
+   * |------+------+------+------+------+------|   (   |    |    )  |------+------+------+------+------+------|
+   * | Mute |  Sp- |  Sp+ | Bri- | Bri+ |  *   |-------|    |-------|   {  |   }  |   =  |   +  |   -  |   |  |
    * `-----------------------------------------/       /     \      \-----------------------------------------'
    *                   | ESC  | LGUI |LCtrl | /Space  /       \Enter \  |RAISE |BackSP| RAlt |
    *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -70,8 +70,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    [_RAISE] = LAYOUT(
    KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                     KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
    KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_RCTRL,
-   KC_LALT, KC_HOME, KC_END,  KC_INS,  KC_DEL,  KC_CAPS, _______, _______, KC_PGUP, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_PGDN,
-   KC_MUTE, KC_VOLD, KC_VOLU, KC_BRID, KC_BRIU, XXXXXXX,                   KC_PLUS, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS,
+   KC_LALT, KC_HOME, KC_END,  KC_INS,  KC_DEL,  KC_CAPS, KC_LPRN, KC_RPRN, KC_PGUP, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_PGDN,
+   KC_MUTE, KC_VOLD, KC_VOLU, KC_BRID, KC_BRIU, KC_ASTR,                   KC_LCBR, KC_RCBR, KC_EQL,  KC_PLUS, KC_MINS, KC_PIPE,
                               _______, _______, _______,  _______, _______,  _______, _______, _______
    )
 
